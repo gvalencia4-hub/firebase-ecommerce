@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Products from "./pages/Products";
 import CartPage from "./pages/CartPage";
+import homeImg from "./assets/IMG_1081.png";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
           boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
         }}
       >
+        <img src={homeImg} alt="Home" className="homeHeroImg" />
         <h1 style={{ fontSize: 56, margin: 0 }}>Aubree Rose Valencia Shop</h1>
         <p style={{ marginTop: 10, fontSize: 18, opacity: 0.75 }}>
           Browse products, add to cart, adjust quantities, and checkout total.
