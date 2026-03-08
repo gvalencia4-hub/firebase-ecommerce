@@ -62,6 +62,17 @@ function Home() {
           <Link to="/login">Login</Link>
           <Link to="/contact">Contact Us</Link>
         </div>
+
+        <footer
+          style={{
+            marginTop: 40,
+            textAlign: "center",
+            fontSize: 14,
+            color: "#6b7280",
+          }}
+        >
+          © 2026 Aubree Rose Valencia Shop. All rights reserved.
+        </footer>
       </div>
     </div>
   );
