@@ -4,6 +4,7 @@ import CartPage from "./pages/CartPage";
 import homeImg from "./assets/IMG_1081.png";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Contact from "./pages/Contact";
 
 function Home() {
   return (
@@ -59,6 +60,7 @@ function Home() {
         <div style={{ marginTop: 16, display: "flex", gap: 12 }}>
           <Link to="/register">Create Account</Link>
           <Link to="/login">Login</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
     </div>
@@ -72,6 +74,7 @@ export default function App() {
       <Route path="/cart" element={<CartPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
