@@ -1,49 +1,32 @@
-# Firebase eCommerce (React + Vite + Firestore)
+# Firebase eCommerce
 
-A simple eCommerce app built with React + Vite that uses Firebase Authentication for users and Cloud Firestore for products and orders.
+A React + Vite eCommerce application integrated with Firebase.
 
 ## Features
 
-- Firebase Auth
-  - Register with email/password
-  - Login / Logout
-- Products stored in Firestore (`products` collection)
-- Cart using Redux Toolkit (saved in sessionStorage)
-- Checkout creates an order in Firestore (`orders` collection)
-- Basic navigation: Home / Products / Cart
+- Product browsing
+- Cart page
+- Login page
+- Firebase integration
+- Automated testing with Vitest
+- GitHub Actions CI pipeline
 
-## Tech Stack
+## Tests
 
-- React + Vite
-- Redux Toolkit
-- Firebase Authentication
-- Cloud Firestore
+This project includes:
 
-## Firestore Collections
+- Unit test for Products page
+- Unit test for Login page
+- Render test for Cart page
 
-### `products`
+## CI/CD
 
-Example fields:
+GitHub Actions automatically:
 
-- `title` (string)
-- `price` (number)
-- `image` (string URL)
-- `category` (string)
+- installs dependencies
+- runs tests
+- builds the project on push to `main`
 
-### `orders`
+## GitHub Repository
 
-Example fields:
-
-- `userId` (string)
-- `email` (string)
-- `items` (array of cart items)
-- `total` (number)
-- `createdAt` (timestamp)
-
-## Getting Started (Run Locally)
-
-1. Install dependencies:
-
-```bash
-npm install
-```
+https://github.com/gvalencia4-hub/firebase-ecommerce
